@@ -19,6 +19,7 @@ public class BrowserLaunch {
 		
 		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
 		RemoteWebDriver driver = new ChromeDriver();
+		//Browser Lunch
 		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.MILLISECONDS);
