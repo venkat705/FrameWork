@@ -22,6 +22,10 @@ public class BrowserLaunch {
 		//Browser Lunch
 		driver.get("https://www.google.com/");
 		driver.manage().window().maximize();
+		
+		
+		
+		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.MILLISECONDS);
 		driver.findElementByXPath("//input[@name='q']").sendKeys(Keys.SPACE );
 		List<WebElement> findElements = driver.findElements(By.xpath("//ul[@class='erkvQe']/li[@class='sbct']"));
